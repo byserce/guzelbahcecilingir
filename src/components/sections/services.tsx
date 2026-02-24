@@ -22,7 +22,7 @@ export default function Services() {
                   <div className="relative h-48 w-full">
                     <Image
                       src={serviceImage.imageUrl}
-                      alt={service.title}
+                      alt={`Güzelbahçe ${service.title} hizmeti`}
                       fill
                       className="object-cover"
                       data-ai-hint={serviceImage.imageHint}

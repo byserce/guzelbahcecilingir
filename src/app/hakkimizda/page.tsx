@@ -5,6 +5,7 @@ import { CILINGIR_BUSINESS_NAME } from '@/lib/constants';
 
 export const metadata: Metadata = {
   title: 'Hakkımızda',
+  description: `${CILINGIR_BUSINESS_NAME} olarak Güzelbahçe ve çevresinde 7/24 güvenilir, hızlı ve profesyonel çilingir hizmeti sunuyoruz. Uzman ekibimiz ve hasarsız işlem garantimizle tanışın.`
 };
 
 export default function AboutUsPage() {
@@ -16,7 +17,7 @@ export default function AboutUsPage() {
          <div className="relative h-64 bg-slate-800">
             <Image
               src={heroImage.imageUrl}
-              alt="Çilingir ekipmanları"
+              alt={`${CILINGIR_BUSINESS_NAME} Hakkında - Profesyonel Ekipmanlar`}
               fill
               className="object-cover opacity-30"
             />
@@ -32,7 +33,7 @@ export default function AboutUsPage() {
             {CILINGIR_BUSINESS_NAME} olarak, Güzelbahçe ve çevresindeki tüm mahallelerde yaşayan siz değerli müşterilerimize 7 gün 24 saat kesintisiz çilingir ve anahtarcı hizmeti sunmaktan gurur duyuyoruz. Yılların verdiği tecrübe ve müşteri memnuniyeti odaklı çalışma anlayışımızla, en zor anlarınızda bir telefon kadar yakınınızdayız.
           </p>
           <p>
-            Kapıda kalmak, anahtarı kaybetmek veya kilitlerin arızalanması gibi stresli durumlarda, modern ekipmanlarımız ve uzman kadromuzla hızlı, hasarsız ve güvenilir çözümler üretiyoruz. Amacımız, sadece kapınızı açmak değil, aynı zamanda güvenliğinizi sağlayarak huzur içinde yaşamanıza katkıda bulunmaktır.
+            Kapıda kalmak, anahtarı kaybetmek veya kilitlerin arızalanması gibi stresli durumlarda, modern ekipmanlarımız ve uzman kadromuzla hızlı, hasarsız ve güvenilir çözümler üretiyoruz. Amacımız, sadece kapınızı açmak değil, aynı zamanda kilit göbeği (barel) değişimi gibi hizmetlerle güvenliğinizi sağlayarak huzur içinde yaşamanıza katkıda bulunmaktır.
           </p>
           
           <h2>Neden Biz?</h2>

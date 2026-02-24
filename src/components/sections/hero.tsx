@@ -7,9 +7,10 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 interface HeroProps {
   title: string;
   subtitle: string;
+  altText?: string;
 }
 
-export default function Hero({ title, subtitle }: HeroProps) {
+export default function Hero({ title, subtitle, altText }: HeroProps) {
   const heroImage = PlaceHolderImages.find((img) => img.id === 'hero');
 
   return (
@@ -17,7 +18,7 @@ export default function Hero({ title, subtitle }: HeroProps) {
       {heroImage && (
         <Image
           src={heroImage.imageUrl}
-          alt={heroImage.description}
+          alt={altText || heroImage.description}
           fill
           priority
           className="object-cover"

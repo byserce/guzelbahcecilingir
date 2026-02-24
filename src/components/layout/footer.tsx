@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { CILINGIR_BUSINESS_NAME, CILINGIR_PHONE_NUMBER, neighborhoods } from '@/lib/constants';
+import { CILINGIR_BUSINESS_NAME, CILINGIR_PHONE_NUMBER, neighborhoods, CILINGIR_ADDRESS } from '@/lib/constants';
 
 export default function Footer() {
   return (
@@ -8,10 +8,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           <div>
             <h3 className="text-xl font-bold">{CILINGIR_BUSINESS_NAME}</h3>
-            <p className="mt-2 text-muted-foreground">Güzelbahçe ve çevresinde profesyonel çilingir hizmeti.</p>
+            <p className="mt-2 text-muted-foreground">Güzelbahçe ve çevresinde profesyonel, 7/24 acil çilingir ve anahtarcı hizmeti.</p>
             <div className="mt-4">
               <p className="font-semibold">Telefon:</p>
               <a href={`tel:${CILINGIR_PHONE_NUMBER.replace(/\s/g, '')}`} className="hover:text-primary">{CILINGIR_PHONE_NUMBER}</a>
+            </div>
+            <div className="mt-4">
+              <p className="font-semibold">Adres:</p>
+              <p className="text-muted-foreground">{CILINGIR_ADDRESS}</p>
             </div>
           </div>
           <div>

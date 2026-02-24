@@ -2,31 +2,31 @@
   "placeholderImages": [
     {
       "id": "hero",
-      "description": "Locksmith at work",
+      "description": "Güzelbahçe çilingir ustası anahtar ve kilitlerle çalışıyor",
       "imageUrl": "https://images.unsplash.com/photo-1578912084730-23a3182cdf27?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxsb2Nrc21pdGglMjBzZXJ2aWNlfGVufDB8fHx8MTc3MTk1Mjk2OHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "locksmith service"
     },
     {
       "id": "door-lock",
-      "description": "A modern door lock",
+      "description": "Güzelbahçe çilingir tarafından takılmış güvenli çelik kapı kilidi",
       "imageUrl": "https://images.unsplash.com/photo-1635602739175-bab409a6e94c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxkb29yJTIwbG9ja3xlbnwwfHx8fDE3NzE5NTI5Njh8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "door lock"
     },
     {
       "id": "car-lock",
-      "description": "Unlocking a car door",
+      "description": "Güzelbahçe oto çilingir servisi ile araba kapısı açma",
       "imageUrl": "https://images.unsplash.com/photo-1671719367451-7bf05ae9549c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjYXIlMjBrZXl8ZW58MHx8fHwxNzcxOTUyOTY4fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "car key"
     },
     {
       "id": "safe-lock",
-      "description": "Opening a safe",
+      "description": "Güzelbahçe kasa çilingiri hizmeti ile çelik kasa açma",
       "imageUrl": "https://images.unsplash.com/photo-1634108947682-12a8ddfc9b61?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzYWZlJTIwdmF1bHR8ZW58MHx8fHwxNzcxOTUyOTY4fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "safe vault"
     },
     {
       "id": "key-duplication",
-      "description": "Changing a lock cylinder",
+      "description": "Güzelbahçe anahtarcı kilit göbeği (barel) değişimi yapıyor",
       "imageUrl": "https://images.unsplash.com/photo-1770447607488-c24c64607708?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxrZXklMjBjdXR0aW5nfGVufDB8fHx8MTc3MTk1Mjk2OHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "key cutting"
     }

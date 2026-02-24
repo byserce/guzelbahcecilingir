@@ -1,9 +1,10 @@
-import { ShieldCheck, Clock, Award, Car, KeyRound, Lock, Wrench } from 'lucide-react';
+import { ShieldCheck, Clock, Award, Car, KeyRound, Lock, Wrench, Quote } from 'lucide-react';
 
 export const CILINGIR_BUSINESS_NAME = 'Güzelbahçe Çilingir';
 export const CILINGIR_PHONE_NUMBER = '0551 890 19 79';
 export const CILINGIR_PHONE_LINK = 'tel:+905518901979';
 export const CILINGIR_DOMAIN = 'guzelbahcecilingir.com';
+export const CILINGIR_ADDRESS = 'Yalı Mah. 54. Sok. No:12, 35310 Güzelbahçe/İzmir';
 
 export const neighborhoods = [
   "yelki", 
@@ -64,19 +65,37 @@ export const trustBadges = [
 
 export const faqs = [
     {
-      question: 'Güzelbahçe çilingir fiyatları ne kadar? (2024-2025)',
-      answer: 'Çilingir hizmet ücretleri yapılacak işleme (çelik kapı açma, kilit göbeği/barel değişimi, oto çilingir), mesafeye ve günün saatine göre değişir. En uygun fiyat teklifi ve güncel çilingir fiyatları için bizi arayarak net bilgi alabilirsiniz.'
+      question: 'Güzelbahçe çilingir fiyatları ne kadar?',
+      answer: 'Çilingir hizmet ücretleri; yapılacak işleme (çelik kapı açma, kilit göbeği/barel değişimi, oto çilingir), mesafeye ve günün saatine göre değişir. Fiyatlarımız şeffaftır ve kötü sürprizlerle karşılaşmazsınız. En uygun fiyat teklifi için bizi arayarak net bilgi alabilirsiniz.'
     },
     {
       question: 'Pazar günü açık çilingir bulabilir miyim?',
-      answer: 'Evet, kesinlikle. Güzelbahçe\'de pazar günleri, resmi tatiller ve geceleri de dahil olmak üzere 7/24 nöbetçi çilingir olarak hizmet veriyoruz. Acil durumlarda bir telefon kadar yakınız.'
+      answer: 'Evet, kesinlikle. Güzelbahçe\'de pazar günleri, resmi tatiller ve bayramlar da dahil olmak üzere 7 gün 24 saat nöbetçi çilingir olarak hizmet veriyoruz. Acil durumlarda bir telefon kadar yakınız.'
     },
     {
       question: 'Anahtarım kapının arkasında kaldı, kapı nasıl açılır?',
-      answer: 'Bu çok yaygın bir durum. Profesyonel ekibimiz özel çilingir aletleri (maymuncuk vb.) kullanarak kapınıza veya kilidinize hiçbir zarar vermeden işlemi 1-2 dakika içinde gerçekleştirir. Kapı açma işlemleri hassasiyet gerektirir ve tecrübeli ustalarımız bu konuda uzmandır.'
+      answer: 'Bu çok yaygın bir durum. Profesyonel ekibimiz özel çilingir aletleri (maymuncuk vb.) kullanarak kapınıza veya kilidinize hiçbir zarar vermeden işlemi 1-2 dakika içinde gerçekleştirir. Bu işlem hassasiyet gerektirir, tecrübeli ustalarımız bu konuda uzmandır.'
     },
     {
       question: 'En güvenli kapı kilidi hangisi?',
-      answer: 'Güvenliğiniz için hırsızlığa karşı tuzaklı, alarmlı ve yüksek güvenlikli silindirlere (göbek) sahip kilitleri öneriyoruz. Kale Kilit, Yale gibi markaların en iyi modelleri stoklarımızda mevcuttur. Adresinizde kilit değişimi ve barel değişimi hizmeti de sunuyoruz.'
+      answer: 'Güvenliğiniz için hırsızlığa karşı tuzaklı kilit ve alarmlı silindir (göbek) gibi yüksek güvenlikli ürünleri öneriyoruz. Kale Kilit, Yale gibi markaların en iyi modelleri stoklarımızda mevcuttur. Adresinize gelerek kilit ve barel değişimi hizmeti de sunuyoruz.'
     }
+];
+
+export const testimonials = [
+  {
+    name: 'Ahmet Y.',
+    location: 'Yelki Mahallesi',
+    comment: 'Gece yarısı kapıda kaldım, 10 dakika içinde gelip kapıyı hasarsız açtılar. Gerçekten çok hızlı ve profesyonel bir ekip.'
+  },
+  {
+    name: 'Elif K.',
+    location: 'Kahramandere',
+    comment: 'Arabamın anahtarını içinde unutmuştum. Yarım saat içinde geldiler ve arabama tek bir çizik bile atmadan kapıyı açtılar. Teşekkürler!'
+  },
+  {
+    name: 'Mustafa C.',
+    location: 'Yalı Mahallesi',
+    comment: 'Taşındığım için kilitleri değiştirmek istedim. Hem uygun fiyat verdiler hem de çok kaliteli tuzaklı kilit taktılar. Güvenle tavsiye ederim.'
+  }
 ];
