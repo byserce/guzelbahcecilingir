@@ -8,9 +8,9 @@
     },
     {
       "id": "door-lock",
-      "description": "Güzelbahçe çilingir tarafından takılmış güvenli çelik kapı kilidi",
-      "imageUrl": "https://images.unsplash.com/photo-1614283999802-374494a35560?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjBmcm9udCUyMGRvb3IlMjBsb2NrfGVufDB8fHx8MTcyMjQyNjAxN3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "door lock"
+      "description": "Güzelbahçe çilingir tarafından bir kapı kilidi açılıyor",
+      "imageUrl": "https://images.unsplash.com/photo-1533714881285-a4341e6b5c35?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsb2NrJTIwcGlja2luZ3xlbnwwfHx8fDE3MjI1MTMwNTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "lock picking"
     },
     {
       "id": "car-lock",
@@ -21,14 +21,14 @@
     {
       "id": "safe-lock",
       "description": "Güzelbahçe kasa çilingiri hizmeti ile çelik kasa açma",
-      "imageUrl": "https://images.unsplash.com/photo-1596205244584-683033b092b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvZmZlbiUyMHNhZmV8ZW58MHx8fHwxNzIyNDI2MTM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1617964899955-73f88d7c67d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsb2Nrc21pdGglMjBvcGVuaW5nJTIwc2FmZXxlbnwwfHx8fDE3MjI1MTMyMDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "safe vault"
     },
     {
       "id": "key-duplication",
       "description": "Güzelbahçe anahtarcı kilit göbeği (barel) değişimi yapıyor",
-      "imageUrl": "https://images.unsplash.com/photo-1563242339-58b3a8a30f14?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxrZXklMjBjdXR0aW5nJTIwbWFjaGluZXxlbnwwfHx8fDE3MjI0MjYxNzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "key cutting"
+      "imageUrl": "https://images.unsplash.com/photo-1583947582960-2cce42838499?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjaGFuZ2luZyUyMGRvb3IlMjBsb2NrfGVufDB8fHx8MTcyMjUxMzM0Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "lock change"
     },
     {
       "id": "smart-lock",
@@ -38,9 +38,9 @@
     },
     {
       "id": "about-us-owner",
-      "description": "Güzelbahçe Çilingir sahibi, güvenilir ve güleryüzlü usta",
-      "imageUrl": "https://images.unsplash.com/photo-1621905252514-a1438b9a1e35?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmcmllbmRseSUyMHdvcmtlciUyMHBvcnRyYWl0fGVufDB8fHx8MTcyMjQyNjI2OXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "locksmith portrait"
+      "description": "Güzelbahçe Çilingir atölyesi",
+      "imageUrl": "https://images.unsplash.com/photo-1601994508384-185b9b94a34b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsb2Nrc21pdGglMjB3b3Jrc2hvcHxlbnwwfHx8fDE3MjI1MTM1ODJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "locksmith workshop"
     }
   ]
 }
