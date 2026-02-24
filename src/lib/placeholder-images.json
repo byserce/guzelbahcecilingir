@@ -2,43 +2,43 @@
   "placeholderImages": [
     {
       "id": "hero",
-      "description": "Güzelbahçe çilingir ustası anahtar ve kilitlerle çalışıyor",
+      "description": "ANA SAYFA VE HAKKIMIZDA SAYFASI ÜST BANNER GÖRSELİ: Genellikle bir çilingirin çalıştığı veya profesyonel ekipmanların olduğu genel bir fotoğraf. Sitenin ilk karşılama görselidir.",
       "imageUrl": "https://images.unsplash.com/photo-1561069934-eee225952461?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsb2NrJTIwa2V5aG9sZSUyMGRhcmt8ZW58MHx8fHwxNzIyNDI1OTE1fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "locksmith service"
     },
     {
       "id": "door-lock",
-      "description": "Güzelbahçe çilingir tarafından bir kapı kilidi açılıyor",
+      "description": "HİZMETLER > ÇELİK KAPI AÇMA: Bir çilingirin çelik kapı kilidi üzerinde çalıştığını gösteren yakın plan bir fotoğraf.",
       "imageUrl": "https://images.unsplash.com/photo-1533714881285-a4341e6b5c35?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsb2NrJTIwcGlja2luZ3xlbnwwfHx8fDE3MjI1MTMwNTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "lock picking"
     },
     {
       "id": "car-lock",
-      "description": "Güzelbahçe oto çilingir servisi ile araba kapısı açma",
+      "description": "HİZMETLER > OTO ÇİLİNGİR: Bir araba kapısının yanında duran veya kapısını açmaya çalışan bir çilingir görseli.",
       "imageUrl": "https://images.unsplash.com/photo-1600779943209-54a7f7f5d475?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsb2Nrc21pdGglMjBjYXIlMjBkb29yfGVufDB8fHx8MTcyMjQyNjA4MHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "car key"
     },
     {
       "id": "safe-lock",
-      "description": "Güzelbahçe kasa çilingiri hizmeti ile çelik kasa açma",
+      "description": "HİZMETLER > KASA ÇİLİNGİRİ: Bir çelik kasa üzerinde çalışan veya yanında duran bir çilingir fotoğrafı.",
       "imageUrl": "https://images.unsplash.com/photo-1617964899955-73f88d7c67d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsb2Nrc21pdGglMjBvcGVuaW5nJTIwc2FmZXxlbnwwfHx8fDE3MjI1MTMyMDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "safe vault"
     },
     {
-      "id": "key-duplication",
-      "description": "Güzelbahçe anahtarcı kilit göbeği (barel) değişimi yapıyor",
+      "id": "lock-change",
+      "description": "HİZMETLER > KİLİT & GÖBEK DEĞİŞİMİ: Bir kapı kilidinin göbeğini (barel) değiştiren bir elin yakın plan fotoğrafı.",
       "imageUrl": "https://images.unsplash.com/photo-1583947582960-2cce42838499?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjaGFuZ2luZyUyMGRvb3IlMjBsb2NrfGVufDB8fHx8MTcyMjUxMzM0Nnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "lock change"
     },
     {
       "id": "smart-lock",
-      "description": "Güzelbahçe akıllı kilit montajı hizmetiyle takılmış modern bir akıllı kilit",
+      "description": "HİZMETLER > AKILLI KİLİT MONTAJI: Bir kapıya monte edilmiş modern bir akıllı kilit fotoğrafı.",
       "imageUrl": "https://images.unsplash.com/photo-1587930885141-5c8f4a7c1b34?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzbWFydCUyMGxvY2t8ZW58MHx8fHwxNzA4NTI0Mjc5fDA&ixlib=rb-4.0.3&q=80&w=1080",
       "imageHint": "smart lock"
     },
     {
       "id": "about-us-owner",
-      "description": "Güzelbahçe Çilingir atölyesi",
+      "description": "HAKKIMIZDA SAYFASI SAHİP/İŞLETME GÖRSELİ: İşletme sahibinin veya atölyenin/dükkanın profesyonel ve güven veren bir fotoğrafı.",
       "imageUrl": "https://images.unsplash.com/photo-1601994508384-185b9b94a34b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsb2Nrc21pdGglMjB3b3Jrc2hvcHxlbnwwfHx8fDE3MjI1MTM1ODJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "locksmith workshop"
     }

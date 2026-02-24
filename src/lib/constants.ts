@@ -41,7 +41,7 @@ export const services = [
     icon: Wrench,
     title: 'Kilit & Göbek Değişimi',
     description: 'Güvenliğiniz için eski kilitlerinizi hırsızlığa karşı tuzaklı, yüksek güvenlikli Kale Kilit göbek (barel) sistemleriyle değiştiriyoruz.',
-    image: 'key-duplication'
+    image: 'lock-change'
   },
   {
     icon: Cpu,
