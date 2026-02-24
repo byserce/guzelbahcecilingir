@@ -29,6 +29,18 @@
       "description": "Güzelbahçe anahtarcı kilit göbeği (barel) değişimi yapıyor",
       "imageUrl": "https://images.unsplash.com/photo-1770447607488-c24c64607708?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxrZXklMjBjdXR0aW5nfGVufDB8fHx8MTc3MTk1Mjk2OHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "key cutting"
+    },
+    {
+      "id": "smart-lock",
+      "description": "Güzelbahçe akıllı kilit montajı hizmetiyle takılmış modern bir akıllı kilit",
+      "imageUrl": "https://images.unsplash.com/photo-1587930885141-5c8f4a7c1b34?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzbWFydCUyMGxvY2t8ZW58MHx8fHwxNzA4NTI0Mjc5fDA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "smart lock"
+    },
+    {
+      "id": "about-us-owner",
+      "description": "Güzelbahçe Çilingir sahibi, güvenilir ve güleryüzlü usta",
+      "imageUrl": "https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNzAwOHwwfDF8c2VhcmNofDEyfHxwb3J0cmFpdCUyMG1hbGUlMjBzbWlsaW5nfGVufDB8fHx8MTY3MjczOTQ5N3ww&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "locksmith portrait"
     }
   ]
 }

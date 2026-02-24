@@ -13,7 +13,7 @@ export default function Services() {
             Kapıda kalma derdine son! Her türlü kilit ve anahtar sorununuz için yanınızdayız.
           </p>
         </div>
-        <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
           {services.map((service) => {
             const serviceImage = PlaceHolderImages.find((img) => img.id === service.image);
             return (
@@ -26,7 +26,7 @@ export default function Services() {
                       fill
                       className="object-cover"
                       data-ai-hint={serviceImage.imageHint}
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 20vw"
                     />
                   </div>
                 )}

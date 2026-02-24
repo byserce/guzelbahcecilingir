@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
-import { CILINGIR_BUSINESS_NAME, CILINGIR_PHONE_NUMBER, CILINGIR_DOMAIN, CILINGIR_PHONE_LINK, CILINGIR_ADDRESS } from '@/lib/constants';
+import { CILINGIR_BUSINESS_NAME, CILINGIR_PHONE_NUMBER, CILINGIR_DOMAIN, CILINGIR_PHONE_LINK, CILINGIR_ADDRESS, neighborhoods } from '@/lib/constants';
 import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
 import FloatingContact from '@/components/layout/floating-contact';
@@ -29,12 +29,31 @@ export const metadata: Metadata = {
     'Güzelbahçe kilit değiştirme',
     'Güzelbahçe göbek değişimi',
     'Güzelbahçe kale kilit',
-    'Yelki çilingir',
-    'Kahramandere çilingir',
-    'Yalı mahallesi çilingir',
-    'Siteler mahallesi anahtarcı',
+    ...neighborhoods.map(n => `${n} çilingir`),
+    ...neighborhoods.map(n => `${n} anahtarcı`),
   ],
   metadataBase: new URL(`https://${CILINGIR_DOMAIN}`),
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: {
+        default: `Güzelbahçe Çilingir & Anahtarcı | 7/24 Acil Servis | ${CILINGIR_PHONE_NUMBER}`,
+        template: `%s | ${CILINGIR_BUSINESS_NAME}`,
+    },
+    description: 'Güzelbahçe\'de 7/24 acil çilingir ve anahtarcı servisi. 15 dakikada yanınızdayız.',
+    url: `https://${CILINGIR_DOMAIN}`,
+    siteName: CILINGIR_BUSINESS_NAME,
+    images: [
+      {
+        url: `https://${CILINGIR_DOMAIN}/og-image.png`,
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: 'tr_TR',
+    type: 'website',
+  },
 };
 
 export default function RootLayout({
@@ -78,11 +97,30 @@ export default function RootLayout({
       opens: '00:00',
       closes: '23:59',
     },
-    areaServed: 'Güzelbahçe, İzmir',
+    areaServed: {
+      '@type': 'GeoCircle',
+      geoMidpoint: {
+        '@type': 'GeoCoordinates',
+        latitude: '38.3783',
+        longitude: '26.8844'
+      },
+      geoRadius: '10000' // 10km radius
+    },
     contactPoint : {
       '@type' : 'ContactPoint',
       telephone : CILINGIR_PHONE_LINK.replace('tel:', ''),
       contactType : 'customer service'
+    },
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: 'Çilingir Hizmetleri',
+      itemListElement: [
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Acil Çelik Kapı Açma' }},
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Oto Çilingir Hizmeti' }},
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Kasa Çilingir Hizmeti' }},
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Kilit ve Göbek Değişimi' }},
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Akıllı Kilit Montajı' }}
+      ]
     }
   };
 
