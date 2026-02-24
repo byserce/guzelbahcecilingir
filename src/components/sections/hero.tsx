@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Phone } from 'lucide-react';
-import { CILINGIR_PHONE_LINK, CILINGIR_WHATSAPP_LINK } from '@/lib/constants';
+import { CILINGIR_PHONE_LINK, CILINGIR_PHONE_NUMBER, CILINGIR_WHATSAPP_LINK } from '@/lib/constants';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import WhatsAppIcon from '../icons/whatsapp-icon';
 
@@ -35,16 +35,19 @@ export default function Hero({ title, subtitle, altText }: HeroProps) {
           {subtitle}
         </p>
         <div className="mt-8 flex flex-col sm:flex-row gap-4">
-            <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg font-bold shadow-xl transition-transform hover:scale-105">
-              <a href={CILINGIR_PHONE_LINK}>
-                <Phone className="mr-2 h-5 w-5" />
-                Hemen Arayın
+            <Button asChild size="lg" className="h-auto bg-accent text-accent-foreground hover:bg-accent/90 shadow-xl transition-transform hover:scale-105">
+              <a href={CILINGIR_PHONE_LINK} className="flex items-center gap-3 px-6 py-3">
+                <Phone className="h-6 w-6" />
+                <div className="flex flex-col text-left leading-tight">
+                    <span className="text-lg font-bold">Hemen Ara</span>
+                    <span className="text-sm font-medium">{CILINGIR_PHONE_NUMBER}</span>
+                </div>
               </a>
             </Button>
             <Button asChild size="lg" className="bg-whatsapp text-white hover:bg-whatsapp/90 text-lg font-bold shadow-xl transition-transform hover:scale-105">
-               <a href={CILINGIR_WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
-                <WhatsAppIcon className="mr-2 h-5 w-5" />
-                WhatsApp'tan Yazın
+               <a href={CILINGIR_WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3">
+                <WhatsAppIcon className="h-5 w-5" />
+                <span>WhatsApp'tan Yazın</span>
                </a>
             </Button>
         </div>
