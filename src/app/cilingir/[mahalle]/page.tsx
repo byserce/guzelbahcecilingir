@@ -8,6 +8,7 @@ import Faq from '@/components/sections/faq';
 import MapSection from '@/components/sections/map-section';
 import CustomerReviews from '@/components/sections/customer-reviews';
 import LocalExpertise from '@/components/sections/local-expertise';
+import NeighborhoodLinks from '@/components/sections/neighborhood-links';
 
 export async function generateStaticParams() {
   return neighborhoods.map((mahalle) => ({
@@ -65,6 +66,7 @@ export default function MahallePage({ params }: { params: { mahalle: string } })
       <TrustBadges />
       <Services />
       <LocalExpertise neighborhood={mahalle} />
+      <NeighborhoodLinks />
       <CustomerReviews />
       <Faq />
       <MapSection />
