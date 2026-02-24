@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { TriangleAlert, Home, Phone } from 'lucide-react';
-import { CILINGIR_PHONE_LINK } from '@/lib/constants';
+import { CILINGIR_PHONE_LINK, CILINGIR_WHATSAPP_LINK } from '@/lib/constants';
+import WhatsAppIcon from '@/components/icons/whatsapp-icon';
 
 export default function NotFound() {
   return (
@@ -18,11 +19,11 @@ export default function NotFound() {
             Acil Çilingir Çağır
           </a>
         </Button>
-        <Button asChild variant="outline" size="lg">
-          <Link href="/">
-            <Home className="mr-2 h-5 w-5" />
-            Ana Sayfaya Dön
-          </Link>
+        <Button asChild size="lg" className="bg-whatsapp text-white hover:bg-whatsapp/90">
+          <a href={CILINGIR_WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
+            <WhatsAppIcon className="mr-2 h-5 w-5" />
+            WhatsApp'tan Ulaşın
+          </a>
         </Button>
       </div>
     </div>

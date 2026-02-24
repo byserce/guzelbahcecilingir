@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import { KeyRound, Phone } from 'lucide-react';
-import { CILINGIR_BUSINESS_NAME, CILINGIR_PHONE_LINK, CILINGIR_PHONE_NUMBER } from '@/lib/constants';
+import { CILINGIR_BUSINESS_NAME, CILINGIR_PHONE_LINK, CILINGIR_WHATSAPP_LINK } from '@/lib/constants';
 import { Button } from '@/components/ui/button';
+import WhatsAppIcon from '../icons/whatsapp-icon';
 
 export default function Header() {
   return (
@@ -12,17 +13,17 @@ export default function Header() {
           <span className="hidden sm:inline">{CILINGIR_BUSINESS_NAME}</span>
           <span className="sm:hidden">Güzelbahçe Çilingir</span>
         </Link>
-        <div className="ml-auto flex items-center gap-4">
-          <Button asChild className="hidden md:flex">
-            <a href={CILINGIR_PHONE_LINK}>
-              <Phone className="mr-2 h-4 w-4" />
-              {CILINGIR_PHONE_NUMBER}
-            </a>
-          </Button>
+        <div className="ml-auto flex items-center gap-2">
           <Button asChild variant="outline">
             <a href={CILINGIR_PHONE_LINK}>
               <Phone className="mr-2 h-4 w-4" />
               Hemen Ara
+            </a>
+          </Button>
+          <Button asChild className="bg-whatsapp text-white hover:bg-whatsapp/90">
+            <a href={CILINGIR_WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
+              <WhatsAppIcon className="mr-2 h-4 w-4" />
+              WhatsApp
             </a>
           </Button>
         </div>
