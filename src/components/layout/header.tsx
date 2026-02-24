@@ -10,7 +10,7 @@ export default function Header() {
         <Link href="/" className="flex items-center gap-2 font-black text-primary text-xl">
           <KeyRound className="h-6 w-6" />
           <span className="hidden sm:inline">{CILINGIR_BUSINESS_NAME}</span>
-          <span className="sm:hidden">Jet Çilingir</span>
+          <span className="sm:hidden">Güzelbahçe Çilingir</span>
         </Link>
         <div className="ml-auto flex items-center gap-4">
           <Button asChild className="hidden md:flex">

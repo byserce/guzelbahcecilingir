@@ -2,7 +2,7 @@ import { ShieldCheck, Clock, Award, Car, KeyRound, Lock, Wrench } from 'lucide-r
 
 export const CILINGIR_PHONE_NUMBER = '0551 890 19 79';
 export const CILINGIR_PHONE_LINK = 'tel:+905518901979';
-export const CILINGIR_BUSINESS_NAME = 'Güzelbahçe Jet Çilingir';
+export const CILINGIR_BUSINESS_NAME = 'Güzelbahçe Çilingir';
 export const CILINGIR_DOMAIN = 'guzelbahcecilingir.com';
 
 export const neighborhoods = [
