@@ -9,8 +9,8 @@ export default function HomePage() {
   return (
     <>
       <Hero
-        title="Güzelbahçe Çilingir & Anahtarcı"
-        subtitle="Acil çilingir mi arıyorsunuz? Güzelbahçe'de 7/24 nöbetçi anahtarcı ekibimizle en yakın çilingir olarak 15 dakikada kapınızdayız!"
+        title="Güzelbahçe Acil Çilingir Servisi"
+        subtitle="Kapıda mı kaldınız? Güzelbahçe'de 7/24 nöbetçi anahtarcı ekibimizle en yakın çilingir olarak 15 dakikada kapınızdayız!"
       />
       <TrustBadges />
       <Services />

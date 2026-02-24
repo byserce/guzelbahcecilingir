@@ -23,9 +23,9 @@ export async function generateMetadata({ params }: { params: { mahalle: string }
   const formattedMahalle = mahalle.charAt(0).toUpperCase() + mahalle.slice(1);
 
   return {
-    title: `${formattedMahalle} Çilingir & Anahtarcı - 15 Dakikada Acil Servis`,
-    description: `${formattedMahalle} mahallesinde acil çilingir mi arıyorsunuz? 7/24 anahtarcı servisimizle kilit değişimi, oto çilingir ve kapı açma hizmetleri. Hemen arayın: ${CILINGIR_PHONE_NUMBER}`,
-    keywords: [`${formattedMahalle} çilingir`, `${formattedMahalle} anahtarcı`, `acil çilingir ${formattedMahalle}`, `nöbetçi çilingir ${formattedMahalle}`, "Güzelbahçe çilingir"],
+    title: `${formattedMahalle} Çilingir - 7/24 Acil Anahtarcı | ${CILINGIR_PHONE_NUMBER}`,
+    description: `${formattedMahalle} mahallesinde acil çilingir. 7/24 nöbetçi anahtarcı servisimizle kapı açma, kilit değişimi, oto çilingir hizmetleri. En yakın ekip 15 dakikada adreste. Arayın: ${CILINGIR_PHONE_NUMBER}`,
+    keywords: [`${formattedMahalle} çilingir`, `${formattedMahalle} anahtarcı`, `acil çilingir ${formattedMahalle}`, `nöbetçi çilingir ${formattedMahalle}`, `en yakın çilingir ${formattedMahalle}`, `${formattedMahalle} oto çilingir`, "Güzelbahçe çilingir"],
   };
 }
 
@@ -41,8 +41,8 @@ export default function MahallePage({ params }: { params: { mahalle: string } })
   return (
     <>
       <Hero
-        title={`${formattedMahalle} Çilingir Servisi`}
-        subtitle={`Güzelbahçe ${formattedMahalle} mahallesinde 7/24 acil ve nöbetçi çilingir. En yakın anahtarcı ekibimiz 15 dakikada yanınızda!`}
+        title={`${formattedMahalle} Çilingir Servisi - 7/24 Acil`}
+        subtitle={`Güzelbahçe ${formattedMahalle} mahallesinde kapıda mı kaldınız? 15 dakikada yanınızdayız. Hızlı, güvenilir ve hasarsız çilingir hizmeti.`}
       />
       <TrustBadges />
       <Services />

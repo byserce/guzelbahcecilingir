@@ -20,26 +20,26 @@ export const neighborhoods = [
 export const services = [
   {
     icon: KeyRound,
-    title: 'Kapı Açma',
-    description: 'Her türlü kapı ve kilit sorunlarınızda 7/24 yanınızdayız. Hızlı ve hasarsız çözümler.',
+    title: 'Çelik Kapı Açma',
+    description: 'Markası ne olursa olsun çelik kapılarınız maymuncuk ve özel ekipmanlarla hasarsız açılır.',
     image: 'door-lock'
   },
   {
     icon: Car,
     title: 'Oto Çilingir',
-    description: 'Aracınızın markası ne olursa olsun, kapılarını hasarsız açıyoruz. Anahtarınızı içeride mi unuttunuz?',
+    description: 'Aracınızın anahtarını içeride unuttuğunuzda veya kaybettiğinizde arabanızın kapısını zarar vermeden açıyoruz.',
     image: 'car-lock'
   },
   {
     icon: Lock,
     title: 'Kasa Çilingiri',
-    description: 'Ev ve iş yerlerinizdeki her marka çelik kasayı özel ekipmanlarımızla güvenle açıyoruz.',
+    description: 'Ev ve iş yerlerinizdeki şifreli veya anahtarlı her marka çelik kasayı özel ekipmanlarla güvenle açıyoruz.',
     image: 'safe-lock'
   },
   {
     icon: Wrench,
-    title: 'Kilit Değişimi',
-    description: 'Güvenliğiniz için eski kilitlerinizi Kale Kilit gibi güvenilir markaların yeni modelleriyle değiştiriyoruz.',
+    title: 'Kilit & Barel Değişimi',
+    description: 'Güvenliğiniz için eski kilitlerinizi tuzaklı, yüksek güvenlikli Kale Kilit barel (göbek) ile değiştiriyoruz.',
     image: 'key-duplication'
   },
 ];
@@ -64,19 +64,19 @@ export const trustBadges = [
 
 export const faqs = [
     {
-      question: 'Güzelbahçe çilingir fiyatları ne kadar?',
-      answer: 'Çilingir hizmet ücretleri yapılacak işleme (çelik kapı açma, kilit göbeği değişimi, oto çilingir), mesafeye ve günün saatine göre değişir. En uygun fiyat teklifi ve güncel çilingir fiyatları için bizi arayarak net bilgi alabilirsiniz.'
+      question: 'Güzelbahçe çilingir fiyatları ne kadar? (2024-2025)',
+      answer: 'Çilingir hizmet ücretleri yapılacak işleme (çelik kapı açma, kilit göbeği/barel değişimi, oto çilingir), mesafeye ve günün saatine göre değişir. En uygun fiyat teklifi ve güncel çilingir fiyatları için bizi arayarak net bilgi alabilirsiniz.'
     },
     {
-      question: 'Pazar günü ve gece nöbetçi çilingir hizmetiniz var mı?',
-      answer: 'Evet, Güzelbahçe\'de pazar günleri, resmi tatiller ve geceleri de dahil olmak üzere 7/24 nöbetçi çilingir olarak hizmet veriyoruz. Acil durumlarda bir telefon kadar yakınız.'
+      question: 'Pazar günü açık çilingir bulabilir miyim?',
+      answer: 'Evet, kesinlikle. Güzelbahçe\'de pazar günleri, resmi tatiller ve geceleri de dahil olmak üzere 7/24 nöbetçi çilingir olarak hizmet veriyoruz. Acil durumlarda bir telefon kadar yakınız.'
     },
     {
-      question: 'Anahtarım kapının arkasında kaldı, kapıya zarar gelir mi?',
-      answer: 'Hayır. Profesyonel ekibimiz özel çilingir aletleri kullanarak kapınıza veya kilidinize hiçbir zarar vermeden işlemi gerçekleştirir. Kapı açma işlemleri hassasiyet gerektirir ve tecrübeli ustalarımız bu konuda uzmandır.'
+      question: 'Anahtarım kapının arkasında kaldı, kapı nasıl açılır?',
+      answer: 'Bu çok yaygın bir durum. Profesyonel ekibimiz özel çilingir aletleri (maymuncuk vb.) kullanarak kapınıza veya kilidinize hiçbir zarar vermeden işlemi 1-2 dakika içinde gerçekleştirir. Kapı açma işlemleri hassasiyet gerektirir ve tecrübeli ustalarımız bu konuda uzmandır.'
     },
     {
-      question: 'En güvenli kapı kilidi hangisi? Kilit değişimi yapıyor musunuz?',
-      answer: 'Güvenliğiniz için tuzaklı, alarmlı ve yüksek güvenlikli silindirlere sahip kilitleri öneriyoruz. Kale Kilit, Yale gibi markaların en iyi modelleri stoklarımızda mevcuttur. Adresinizde kilit değişimi ve göbek değişimi hizmeti de sunuyoruz.'
+      question: 'En güvenli kapı kilidi hangisi?',
+      answer: 'Güvenliğiniz için hırsızlığa karşı tuzaklı, alarmlı ve yüksek güvenlikli silindirlere (göbek) sahip kilitleri öneriyoruz. Kale Kilit, Yale gibi markaların en iyi modelleri stoklarımızda mevcuttur. Adresinizde kilit değişimi ve barel değişimi hizmeti de sunuyoruz.'
     }
 ];

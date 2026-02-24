@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { services } from '@/lib/constants';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function Services() {
@@ -33,7 +33,7 @@ export default function Services() {
                 <CardHeader>
                   <div className="flex items-center gap-4">
                     <service.icon className="h-8 w-8 text-primary" />
-                    <CardTitle className="text-xl font-semibold">{service.title}</CardTitle>
+                    <h3 className="text-xl font-semibold">{service.title}</h3>
                   </div>
                 </CardHeader>
                 <CardContent className="flex-grow">

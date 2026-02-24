@@ -1,18 +1,37 @@
 import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
 import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
-import { CILINGIR_BUSINESS_NAME, CILINGIR_PHONE_NUMBER, CILINGIR_DOMAIN } from '@/lib/constants';
+import { CILINGIR_BUSINESS_NAME, CILINGIR_PHONE_NUMBER, CILINGIR_DOMAIN, CILINGIR_PHONE_LINK } from '@/lib/constants';
 import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
 import FloatingContact from '@/components/layout/floating-contact';
 
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'swap' });
+
 export const metadata: Metadata = {
   title: {
-    default: `Güzelbahçe Çilingir | 7/24 Acil Nöbetçi Anahtarcı Servisi`,
+    default: `Güzelbahçe Çilingir | 7/24 Acil Anahtarcı Servisi | ${CILINGIR_PHONE_NUMBER}`,
     template: `%s | ${CILINGIR_BUSINESS_NAME}`,
   },
-  description: `Güzelbahçe çilingir servisi: 7/24 acil ve nöbetçi anahtarcı. En yakın çilingir ekibimiz 15 dakikada adresinizde. Oto, kasa, kapı çilingir ve kilit değiştirme hizmetleri. Telefon numaramız: ${CILINGIR_PHONE_NUMBER}`,
-  keywords: ['Güzelbahçe çilingir', 'Güzelbahçe anahtarcı', 'acil çilingir', 'nöbetçi çilingir', 'en yakın çilingir', 'oto çilingir', 'kasa çilingiri', 'kilit değiştirme', 'çilingir numarası'],
+  description: `Güzelbahçe'de acil çilingir mi arıyorsunuz? 7/24 nöbetçi anahtarcı servisimizle 15 dakikada kapınızdayız. Oto, kasa, kapı açma ve kilit değiştirme. Hemen arayın: ${CILINGIR_PHONE_NUMBER}`,
+  keywords: [
+    'Güzelbahçe çilingir', 
+    'Güzelbahçe anahtarcı', 
+    'Güzelbahçe acil çilingir',
+    'Güzelbahçe nöbetçi çilingir',
+    'Güzelbahçe 7/24 çilingir',
+    'Güzelbahçe en yakın çilingir',
+    'Güzelbahçe çilingir numarası',
+    'Güzelbahçe oto çilingir',
+    'Güzelbahçe kasa çilingiri',
+    'Güzelbahçe çelik kapı açma',
+    'Güzelbahçe kilit değiştirme',
+    'Güzelbahçe kale kilit',
+    'Yelki çilingir',
+    'Kahramandere çilingir',
+    'Yalı mahallesi çilingir'
+  ],
   metadataBase: new URL(`https://${CILINGIR_DOMAIN}`),
 };
 
@@ -30,18 +49,21 @@ export default function RootLayout({
       addressLocality: 'Güzelbahçe',
       addressRegion: 'İzmir',
     },
-    telephone: '+905518901979',
+    telephone: CILINGIR_PHONE_LINK.replace('tel:', ''),
     url: `https://${CILINGIR_DOMAIN}`,
     openingHours: 'Mo-Su 00:00-23:59',
     priceRange: '₺₺',
+    areaServed: 'Güzelbahçe, İzmir',
+    contactPoint : {
+      '@type' : 'ContactPoint',
+      telephone : CILINGIR_PHONE_LINK.replace('tel:', ''),
+      contactType : 'customer service'
+    }
   };
 
   return (
-    <html lang="tr" className="scroll-smooth">
+    <html lang="tr" className={`${inter.variable} scroll-smooth`}>
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

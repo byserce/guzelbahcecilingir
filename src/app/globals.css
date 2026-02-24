@@ -75,4 +75,24 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+
+  /* Add prose styles for static content pages */
+  .prose h1 {
+    @apply text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-6;
+  }
+  .prose h2 {
+    @apply text-2xl font-bold tracking-tight sm:text-3xl mt-8 mb-4 border-b pb-2;
+  }
+  .prose p {
+    @apply leading-7 mb-4;
+  }
+  .prose a {
+    @apply text-primary underline;
+  }
+  .prose ul {
+    @apply list-disc list-inside space-y-2 mb-4;
+  }
+  .prose li {
+    @apply mb-2;
+  }
 }

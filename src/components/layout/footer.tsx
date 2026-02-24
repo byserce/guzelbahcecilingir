@@ -31,7 +31,8 @@ export default function Footer() {
             <ul className="mt-4 space-y-2">
               <li><Link href="/#services" className="text-muted-foreground hover:text-primary">Hizmetlerimiz</Link></li>
               <li><Link href="/#faq" className="text-muted-foreground hover:text-primary">Sıkça Sorulan Sorular</Link></li>
-              <li><Link href="/#contact" className="text-muted-foreground hover:text-primary">İletişim</Link></li>
+              <li><Link href="/hakkimizda" className="text-muted-foreground hover:text-primary">Hakkımızda</Link></li>
+              <li><Link href="/gizlilik-politikasi" className="text-muted-foreground hover:text-primary">Gizlilik Politikası</Link></li>
             </ul>
           </div>
         </div>
