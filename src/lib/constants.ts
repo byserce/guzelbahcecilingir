@@ -4,7 +4,7 @@ export const CILINGIR_BUSINESS_NAME = 'Güzelbahçe Çilingir';
 export const CILINGIR_PHONE_NUMBER = '0551 890 19 79';
 export const CILINGIR_PHONE_LINK = 'tel:+905518901979';
 export const CILINGIR_WHATSAPP_NUMBER = '+905518901979';
-const CILINGIR_WHATSAPP_MESSAGE = 'Merhaba, acil çilingir hizmetine ihtiyacım var.';
+const CILINGIR_WHATSAPP_MESSAGE = 'Merhaba, Güzelbahçe Çilingir için yazıyorum.';
 export const CILINGIR_WHATSAPP_LINK = `https://wa.me/${CILINGIR_WHATSAPP_NUMBER.replace(/\D/g, '')}?text=${encodeURIComponent(CILINGIR_WHATSAPP_MESSAGE)}`;
 export const CILINGIR_DOMAIN = 'guzelbahcecilingir.com';
 export const CILINGIR_ADDRESS = 'Yalı Mah. 54. Sok. No:12, 35310 Güzelbahçe/İzmir';
