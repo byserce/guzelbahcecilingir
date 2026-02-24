@@ -42,6 +42,11 @@ export default function Footer() {
         </div>
         <div className="mt-8 border-t pt-8 text-center text-muted-foreground text-sm">
           <p>&copy; {new Date().getFullYear()} {CILINGIR_BUSINESS_NAME}. Tüm hakları saklıdır.</p>
+          <p className="mt-1">
+            <a href="https://github.com/byserce" target="_blank" rel="noopener noreferrer" className="hover:text-primary">
+              developed by @byserce
+            </a>
+          </p>
           <p className="mt-2 text-xs">Vergi Dairesi: Narlıdere V.D. | Vergi No: 0000000000 | Ticaret Sicil No: 00000</p>
         </div>
       </div>
