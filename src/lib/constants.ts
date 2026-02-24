@@ -1,8 +1,8 @@
 import { ShieldCheck, Clock, Award, Car, KeyRound, Lock, Wrench } from 'lucide-react';
 
+export const CILINGIR_BUSINESS_NAME = 'Güzelbahçe Çilingir';
 export const CILINGIR_PHONE_NUMBER = '0551 890 19 79';
 export const CILINGIR_PHONE_LINK = 'tel:+905518901979';
-export const CILINGIR_BUSINESS_NAME = 'Güzelbahçe Çilingir';
 export const CILINGIR_DOMAIN = 'guzelbahcecilingir.com';
 
 export const neighborhoods = [
@@ -65,18 +65,18 @@ export const trustBadges = [
 export const faqs = [
     {
       question: 'Güzelbahçe çilingir fiyatları ne kadar?',
-      answer: 'Fiyatlarımız, yapılacak işleme (kapı açma, kilit değişimi vb.), mesafeye ve günün saatine göre değişiklik göstermektedir. En doğru fiyat bilgisi için lütfen bizi arayın.'
+      answer: 'Çilingir hizmet ücretleri yapılacak işleme (çelik kapı açma, kilit göbeği değişimi, oto çilingir), mesafeye ve günün saatine göre değişir. En uygun fiyat teklifi ve güncel çilingir fiyatları için bizi arayarak net bilgi alabilirsiniz.'
     },
     {
-      question: 'Pazar günü açık çilingir bulabilir miyim?',
-      answer: 'Evet, işletmemiz pazar günleri de dahil olmak üzere haftanın 7 günü, 24 saat boyunca hizmet vermektedir. Nöbetçi çilingir ekibimiz her an yardıma hazırdır.'
+      question: 'Pazar günü ve gece nöbetçi çilingir hizmetiniz var mı?',
+      answer: 'Evet, Güzelbahçe\'de pazar günleri, resmi tatiller ve geceleri de dahil olmak üzere 7/24 nöbetçi çilingir olarak hizmet veriyoruz. Acil durumlarda bir telefon kadar yakınız.'
     },
     {
-      question: 'Anahtar içeride kaldı, kapı nasıl açılır?',
-      answer: 'Kapınıza zarar vermeden profesyonel ekipmanlarla açmak en güvenli yoldur. Kendiniz müdahale etmeye çalışmak kilidinize ve kapınıza daha büyük masraflar çıkarabilir. Bizi arayın, 15 dakikada gelelim.'
+      question: 'Anahtarım kapının arkasında kaldı, kapıya zarar gelir mi?',
+      answer: 'Hayır. Profesyonel ekibimiz özel çilingir aletleri kullanarak kapınıza veya kilidinize hiçbir zarar vermeden işlemi gerçekleştirir. Kapı açma işlemleri hassasiyet gerektirir ve tecrübeli ustalarımız bu konuda uzmandır.'
     },
     {
-      question: 'En güvenli kapı kilidi hangisi?',
-      answer: 'Güvenlik seviyesi yüksek, tuzaklı ve maymuncukla açılması zor olan kilitler en güvenlisidir. Kale Kilit, Yale gibi markaların yüksek güvenlikli silindirlerini (göbek) tavsiye ediyoruz. İhtiyacınıza en uygun kilidi birlikte seçebiliriz.'
+      question: 'En güvenli kapı kilidi hangisi? Kilit değişimi yapıyor musunuz?',
+      answer: 'Güvenliğiniz için tuzaklı, alarmlı ve yüksek güvenlikli silindirlere sahip kilitleri öneriyoruz. Kale Kilit, Yale gibi markaların en iyi modelleri stoklarımızda mevcuttur. Adresinizde kilit değişimi ve göbek değişimi hizmeti de sunuyoruz.'
     }
 ];

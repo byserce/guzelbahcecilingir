@@ -8,10 +8,11 @@ import FloatingContact from '@/components/layout/floating-contact';
 
 export const metadata: Metadata = {
   title: {
-    default: `${CILINGIR_BUSINESS_NAME} | 7/24 Acil Anahtarcı Hizmeti`,
+    default: `Güzelbahçe Çilingir | 7/24 Acil Nöbetçi Anahtarcı Servisi`,
     template: `%s | ${CILINGIR_BUSINESS_NAME}`,
   },
-  description: `Güzelbahçe'de 7/24 acil çilingir ve anahtarcı hizmeti. Oto, kasa, kapı çilingir. 15 dakikada adresinizdeyiz. Hemen arayın: ${CILINGIR_PHONE_NUMBER}`,
+  description: `Güzelbahçe çilingir servisi: 7/24 acil ve nöbetçi anahtarcı. En yakın çilingir ekibimiz 15 dakikada adresinizde. Oto, kasa, kapı çilingir ve kilit değiştirme hizmetleri. Telefon numaramız: ${CILINGIR_PHONE_NUMBER}`,
+  keywords: ['Güzelbahçe çilingir', 'Güzelbahçe anahtarcı', 'acil çilingir', 'nöbetçi çilingir', 'en yakın çilingir', 'oto çilingir', 'kasa çilingiri', 'kilit değiştirme', 'çilingir numarası'],
   metadataBase: new URL(`https://${CILINGIR_DOMAIN}`),
 };
 
