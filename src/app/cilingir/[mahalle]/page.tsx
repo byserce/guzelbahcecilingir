@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: { params: { mahalle: string }
   
   const formattedMahalle = mahalle.charAt(0).toUpperCase() + mahalle.slice(1);
 
-  const title = `📞 ${formattedMahalle} Çilingir & Anahtarcı - 7/24 Acil | ${CILINGIR_PHONE_NUMBER} 🔑`;
+  const title = `📞 ${formattedMahalle} Çilingir - 7/24 Acil | ${CILINGIR_PHONE_NUMBER}`;
   const description = `${formattedMahalle} mahallesinde acil çilingir ve anahtarcı. 7/24 nöbetçi servisimizle kapı açma, kilit değişimi, oto çilingir hizmetleri. En yakın ekip 15 dakikada adreste. Arayın: ${CILINGIR_PHONE_NUMBER}`;
 
   return {
