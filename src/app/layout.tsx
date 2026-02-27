@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'sw
 
 export const metadata: Metadata = {
   title: {
-    default: `📞 Güzelbahçe Çilingir | 7/24 Acil ${CILINGIR_PHONE_NUMBER}`,
+    default: `📞 Güzelbahçe Çilingir - 7/24 Acil | ${CILINGIR_PHONE_NUMBER}`,
     template: `%s | ${CILINGIR_BUSINESS_NAME}`,
   },
   description: `Güzelbahçe'de acil çilingir ve anahtarcı. 7/24 nöbetçi servisimizle 15 dakikada kapınızdayız. Oto, kasa, kapı açma, kilit değiştirme. Arayın: ${CILINGIR_PHONE_NUMBER}`,
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: {
-        default: `📞 Güzelbahçe Çilingir | 7/24 Acil ${CILINGIR_PHONE_NUMBER}`,
+        default: `📞 Güzelbahçe Çilingir - 7/24 Acil | ${CILINGIR_PHONE_NUMBER}`,
         template: `%s | ${CILINGIR_BUSINESS_NAME}`,
     },
     description: 'Güzelbahçe\'de 7/24 acil çilingir ve anahtarcı servisi. 15 dakikada yanınızdayız.',
@@ -54,7 +54,18 @@ export const metadata: Metadata = {
     locale: 'tr_TR',
     type: 'website',
   },
+   twitter: {
+    card: 'summary_large_image',
+    title: {
+      default: `📞 Güzelbahçe Çilingir - 7/24 Acil | ${CILINGIR_PHONE_NUMBER}`,
+      template: `%s | ${CILINGIR_BUSINESS_NAME}`,
+    },
+    description: 'Güzelbahçe\'de 7/24 acil çilingir ve anahtarcı servisi. 15 dakikada yanınızdayız.',
+    images: [`https://${CILINGIR_DOMAIN}/og-image.png`],
+  },
   icons: {
+    icon: '/logo.png',
+    shortcut: '/logo.png',
     apple: '/apple-touch-icon.png',
   },
 };

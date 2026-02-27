@@ -1,8 +1,10 @@
-import { ShieldCheck, Clock, Award, Car, KeyRound, Lock, Wrench, Cpu } from 'lucide-react';
+import { ShieldCheck, Clock, Award, Car, KeyRound, Lock, Wrench, Cpu, KeySquare } from 'lucide-react';
 
 export const CILINGIR_BUSINESS_NAME = 'Güzelbahçe Çilingir';
 export const CILINGIR_PHONE_NUMBER = '0551 890 19 79';
 export const CILINGIR_PHONE_LINK = 'tel:+905518901979';
+export const CILINGIR_ALT_PHONE_NUMBER = '0505 036 60 80';
+export const CILINGIR_ALT_PHONE_LINK = 'tel:+905050366080';
 export const CILINGIR_WHATSAPP_NUMBER = '+905518901979';
 const CILINGIR_WHATSAPP_MESSAGE = 'Merhaba, Güzelbahçe Çilingir için yazıyorum.';
 export const CILINGIR_WHATSAPP_LINK = `https://wa.me/${CILINGIR_WHATSAPP_NUMBER.replace(/\D/g, '')}?text=${encodeURIComponent(CILINGIR_WHATSAPP_MESSAGE)}`;

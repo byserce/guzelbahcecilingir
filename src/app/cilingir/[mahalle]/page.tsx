@@ -9,6 +9,7 @@ import MapSection from '@/components/sections/map-section';
 import CustomerReviews from '@/components/sections/customer-reviews';
 import LocalExpertise from '@/components/sections/local-expertise';
 import NeighborhoodLinks from '@/components/sections/neighborhood-links';
+import AboutTeaser from '@/components/sections/about-teaser';
 
 export async function generateStaticParams() {
   return neighborhoods.map((mahalle) => ({
@@ -44,6 +45,12 @@ export async function generateMetadata({ params }: { params: { mahalle: string }
       locale: 'tr_TR',
       type: 'website',
     },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [`https://${CILINGIR_DOMAIN}/og-image.png`],
+    },
   };
 }
 
@@ -65,6 +72,7 @@ export default function MahallePage({ params }: { params: { mahalle: string } })
       />
       <TrustBadges />
       <Services />
+      <AboutTeaser />
       <LocalExpertise neighborhood={mahalle} />
       <NeighborhoodLinks />
       <CustomerReviews />

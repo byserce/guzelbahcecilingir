@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { KeyRound, Phone } from 'lucide-react';
+import { KeySquare, Phone } from 'lucide-react';
 import { CILINGIR_BUSINESS_NAME, CILINGIR_PHONE_LINK, CILINGIR_PHONE_NUMBER } from '@/lib/constants';
 import { Button } from '@/components/ui/button';
 
@@ -8,7 +8,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-20 items-center">
         <Link href="/" className="flex items-center gap-2 font-black text-primary text-xl">
-          <KeyRound className="h-6 w-6" />
+          <KeySquare className="h-6 w-6" />
           <span className="hidden sm:inline">{CILINGIR_BUSINESS_NAME}</span>
           <span className="sm:hidden">Güzelbahçe Çilingir</span>
         </Link>

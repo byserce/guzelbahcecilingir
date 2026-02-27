@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { CILINGIR_BUSINESS_NAME, CILINGIR_PHONE_NUMBER, neighborhoods, CILINGIR_ADDRESS } from '@/lib/constants';
+import { CILINGIR_BUSINESS_NAME, CILINGIR_PHONE_NUMBER, neighborhoods, CILINGIR_ADDRESS, CILINGIR_ALT_PHONE_NUMBER, CILINGIR_ALT_PHONE_LINK, CILINGIR_PHONE_LINK } from '@/lib/constants';
 import SocialShare from './social-share';
 
 export default function Footer() {
@@ -22,8 +22,12 @@ export default function Footer() {
             <h3 className="text-xl font-bold">{CILINGIR_BUSINESS_NAME}</h3>
             <p className="mt-2 text-muted-foreground">Güzelbahçe ve çevresinde profesyonel, 7/24 acil çilingir ve anahtarcı hizmeti.</p>
             <div className="mt-4">
-              <p className="font-semibold">Telefon:</p>
-              <a href={`tel:${CILINGIR_PHONE_NUMBER.replace(/\s/g, '')}`} className="hover:text-primary">{CILINGIR_PHONE_NUMBER}</a>
+              <p className="font-semibold">Acil Hat:</p>
+              <a href={CILINGIR_PHONE_LINK} className="hover:text-primary">{CILINGIR_PHONE_NUMBER}</a>
+            </div>
+            <div className="mt-2">
+              <p className="font-semibold">Alternatif Hat:</p>
+              <a href={CILINGIR_ALT_PHONE_LINK} className="hover:text-primary">{CILINGIR_ALT_PHONE_NUMBER}</a>
             </div>
             <div className="mt-4">
               <p className="font-semibold">Adres:</p>
