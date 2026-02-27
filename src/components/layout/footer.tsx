@@ -3,6 +3,17 @@ import { CILINGIR_BUSINESS_NAME, CILINGIR_PHONE_NUMBER, neighborhoods, CILINGIR_
 import SocialShare from './social-share';
 
 export default function Footer() {
+  const otherSites = [
+    { name: 'Urla Çilingir', url: 'https://urlacilingir.com' },
+    { name: 'Urla 7/24 Çilingir', url: 'https://urlacilingir724.com' },
+    { name: 'Güzelbahçe Anahtarcı', url: 'https://guzelbahceanahtarci.com' },
+    { name: 'Seferihisar Çilingir', url: 'https://seferihisarcilingir.com' },
+    { name: 'Seferihisar Anahtarcı', url: 'https://seferihisaranahtarci.com' },
+    { name: 'Çilingir Seferihisar', url: 'https://cilingirseferihisar.com' },
+    { name: 'Çilingir Urla', url: 'https://cilingirurla.com' },
+    { name: 'Çilingir Güzelbahçe', url: 'https://cilingirguzelbahce.com' },
+  ];
+
   return (
     <footer className="bg-card">
       <div className="container py-12">
@@ -44,6 +55,18 @@ export default function Footer() {
             <SocialShare />
           </div>
         </div>
+
+        <div className="mt-12 border-t pt-8">
+            <h3 className="text-center font-bold mb-4">Hizmet Ağımızdaki Diğer Bölgeler</h3>
+            <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-muted-foreground">
+                {otherSites.map((site) => (
+                    <a key={site.name} href={site.url} target="_blank" rel="noopener noreferrer" className="hover:text-primary">
+                        {site.name}
+                    </a>
+                ))}
+            </div>
+        </div>
+        
         <div className="mt-8 border-t pt-8 text-center text-muted-foreground text-sm">
           <p>&copy; {new Date().getFullYear()} {CILINGIR_BUSINESS_NAME}. Tüm hakları saklıdır.</p>
           <p className="mt-1">
