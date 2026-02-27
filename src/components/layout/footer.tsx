@@ -1,11 +1,12 @@
 import Link from 'next/link';
 import { CILINGIR_BUSINESS_NAME, CILINGIR_PHONE_NUMBER, neighborhoods, CILINGIR_ADDRESS } from '@/lib/constants';
+import SocialShare from './social-share';
 
 export default function Footer() {
   return (
     <footer className="bg-card">
       <div className="container py-12">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div>
             <h3 className="text-xl font-bold">{CILINGIR_BUSINESS_NAME}</h3>
             <p className="mt-2 text-muted-foreground">Güzelbahçe ve çevresinde profesyonel, 7/24 acil çilingir ve anahtarcı hizmeti.</p>
@@ -38,6 +39,9 @@ export default function Footer() {
               <li><Link href="/hakkimizda" className="text-muted-foreground hover:text-primary">Hakkımızda</Link></li>
               <li><Link href="/gizlilik-politikasi" className="text-muted-foreground hover:text-primary">Gizlilik Politikası</Link></li>
             </ul>
+          </div>
+          <div>
+            <SocialShare />
           </div>
         </div>
         <div className="mt-8 border-t pt-8 text-center text-muted-foreground text-sm">
