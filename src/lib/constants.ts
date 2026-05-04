@@ -20,7 +20,10 @@ export const neighborhoods = [
   "çelebi", 
   "atatürk", 
   "payamlı", 
-  "küçükkaya"
+  "küçükkaya",
+  "çamlı",
+  "mustafa-kemal-pasa",
+  "yaka"
 ];
 
 export const services = [

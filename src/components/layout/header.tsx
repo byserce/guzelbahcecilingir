@@ -12,14 +12,15 @@ export default function Header() {
           <span className="hidden sm:inline">{CILINGIR_BUSINESS_NAME}</span>
           <span className="sm:hidden">Güzelbahçe Çilingir</span>
         </Link>
-        <div className="ml-auto flex items-center gap-2">
-          <Button asChild variant="outline" className="h-auto py-2 px-4">
+        <div className="ml-auto flex items-center gap-4">
+          <a href={CILINGIR_PHONE_LINK} className="hidden md:flex flex-col items-end mr-2">
+            <span className="text-xs font-bold text-muted-foreground uppercase tracking-widest">7/24 Acil Hattı</span>
+            <span className="text-lg font-black text-primary">{CILINGIR_PHONE_NUMBER}</span>
+          </a>
+          <Button asChild size="lg" className="h-auto py-2.5 px-6 rounded-full shadow-lg transition-all hover:scale-105">
             <a href={CILINGIR_PHONE_LINK} className="flex items-center gap-3">
-              <Phone className="h-5 w-5 flex-shrink-0" />
-              <div className="flex flex-col text-left leading-tight">
-                <span className="font-semibold">Hemen Ara</span>
-                <span className="text-xs text-muted-foreground">{CILINGIR_PHONE_NUMBER}</span>
-              </div>
+              <Phone className="h-5 w-5 fill-current" />
+              <span className="font-bold">Hemen Ara</span>
             </a>
           </Button>
         </div>

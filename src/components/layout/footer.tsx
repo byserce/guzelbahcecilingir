@@ -40,7 +40,7 @@ export default function Footer() {
               {neighborhoods.map((n) => (
                 <li key={n}>
                   <Link href={`/cilingir/${n}`} className="text-muted-foreground hover:text-primary">
-                    {n.charAt(0).toUpperCase() + n.slice(1)} Çilingir
+                    {n.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')} Çilingir
                   </Link>
                 </li>
               ))}

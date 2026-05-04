@@ -32,12 +32,32 @@ const localDetails: { [key: string]: { focus: string, content: string } } = {
   atatürk: {
     focus: "Merkez Çarşı, Esnaf Yoğunluğu",
     content: "<strong>Atatürk mahallesi</strong> çarşı merkezindeki esnafımıza ve sakinlerimize özel, hızlı anahtar kopyalama, kepenk ve iş yeri kilit sistemleri ve barel değişimi hizmeti veriyoruz. Ticari işletmelerin güvenlik ihtiyaçlarına yönelik çözümler sunuyoruz."
+  },
+  payamlı: {
+    focus: "Köy Merkezi, Dağlık Alanlar",
+    content: "Güzelbahçe'nin yüksek kesimlerinde yer alan <strong>Payamlı</strong> mahallesine arazi araçlarımızla her türlü hava koşulunda ulaşıyoruz. Köy evi kapıları ve bahçe kapısı kilitleri konusunda deneyimliyiz."
+  },
+  küçükkaya: {
+    focus: "Doğa ile İç İçe Evler, Sessiz Sokaklar",
+    content: "<strong>Küçükkaya</strong> mahallesindeki müstakil evlerin güvenliği için yüksek kaliteli dış mekan kilitleri ve sürgülü kapı sistemleri montajı yapıyoruz. Bölgeye en hızlı ulaşan yetkili çilingiriz."
+  },
+  çamlı: {
+    focus: "Çamlı Köyü, Kahvaltıcılar Bölgesi, Yeni Villalar",
+    content: "<strong>Çamlı</strong> mahallesindeki kahvaltı salonları ve yeni villa projelerine 7/24 hizmet sağlıyoruz. Hafta sonu yoğunluğunda bile Çamlı merkezine 15 dakikada ulaşım garantisi veriyoruz."
+  },
+  "mustafa-kemal-pasa": {
+    focus: "Otoban Çıkışı, Sanayi ve Konut Karma Bölgesi",
+    content: "<strong>Mustafa Kemal Paşa</strong> mahallesindeki iş yerleri ve konutlar için profesyonel kilit çözümleri sunuyoruz. Otoban çıkışına yakınlığımız sayesinde acil durumlarda bölgeye saniyeler içinde müdahale ediyoruz."
+  },
+  yaka: {
+    focus: "Yaka Köyü, Geleneksel Mimari, Yerel İşletmeler",
+    content: "<strong>Yaka mahallesinin</strong> otantik dokusuna ve eski tip kapı kilit sistemlerine hakimiz. Geleneksel kilitlerin tamiri ve modern güvenlikli sistemlerle değişimi konusunda Yaka sakinlerine en hızlı hizmeti sunuyoruz."
   }
 };
 
 
 export default function LocalExpertise({ neighborhood }: LocalExpertiseProps) {
-  const formattedNeighborhood = neighborhood.charAt(0).toUpperCase() + neighborhood.slice(1);
+  const formattedNeighborhood = neighborhood.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
   const detail = localDetails[neighborhood];
   const defaultContent = `Güzelbahçe'nin tüm sokak ve caddelerini avucumuzun içi gibi biliyoruz. <strong>${formattedNeighborhood}</strong> mahallesindeki konumunuza motorlu ekiplerimizle dakikalar içinde ulaşıyoruz.`;
     

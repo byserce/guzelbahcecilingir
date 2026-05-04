@@ -24,15 +24,15 @@ export async function generateMetadata({ params }: { params: { mahalle: string }
     return {};
   }
   
-  const formattedMahalle = mahalle.charAt(0).toUpperCase() + mahalle.slice(1);
+  const formattedMahalle = mahalle.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
 
-  const title = `📞 ${formattedMahalle} Çilingir - 7/24 Acil | ${CILINGIR_PHONE_NUMBER}`;
-  const description = `${formattedMahalle} mahallesinde acil çilingir ve anahtarcı. 7/24 nöbetçi servisimizle kapı açma, kilit değişimi, oto çilingir hizmetleri. En yakın ekip 15 dakikada adreste. Arayın: ${CILINGIR_PHONE_NUMBER}`;
+  const title = `📞 ${formattedMahalle} Çilingir | ${CILINGIR_PHONE_NUMBER} | 7/24 Acil Servis`;
+  const description = `${formattedMahalle} mahallesinde acil çilingir ve nöbetçi anahtarcı. 7/24 servisimizle 15 dakikada kapı açma, kilit değişimi, oto çilingir. Hemen arayın: ${CILINGIR_PHONE_NUMBER}`;
 
   return {
     title,
     description,
-    keywords: [`${formattedMahalle} çilingir`, `${formattedMahalle} anahtarcı`, `acil çilingir ${formattedMahalle}`, `nöbetçi çilingir ${formattedMahalle}`, `en yakın çilingir ${formattedMahalle}`, `${formattedMahalle} oto çilingir`, "Güzelbahçe çilingir"],
+    keywords: [`${formattedMahalle} çilingir`, `${formattedMahalle} anahtarcı`, `acil çilingir ${formattedMahalle}`, `nöbetçi çilingir ${formattedMahalle}`, `en yakın çilingir ${formattedMahalle}`, `${formattedMahalle} oto çilingir`, "Güzelbahçe çilingir", `${formattedMahalle} anahtar teslim`],
     alternates: {
       canonical: `/cilingir/${mahalle}`,
     },
@@ -61,10 +61,34 @@ export default function MahallePage({ params }: { params: { mahalle: string } })
     notFound();
   }
 
-  const formattedMahalle = mahalle.charAt(0).toUpperCase() + mahalle.slice(1);
+  const formattedMahalle = mahalle.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+
+  const neighborhoodJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Locksmith',
+    name: `${formattedMahalle} Çilingir - ${CILINGIR_BUSINESS_NAME}`,
+    description: `${formattedMahalle} mahallesinde 7/24 acil çilingir ve anahtarcı hizmeti.`,
+    telephone: CILINGIR_PHONE_NUMBER,
+    url: `https://${CILINGIR_DOMAIN}/cilingir/${mahalle}`,
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Güzelbahçe',
+      addressRegion: 'İzmir',
+      addressCountry: 'TR',
+      streetAddress: `${formattedMahalle} Mahallesi`
+    },
+    areaServed: {
+      '@type': 'AdministrativeArea',
+      name: `${formattedMahalle} Mahallesi`
+    }
+  };
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(neighborhoodJsonLd) }}
+      />
       <Hero
         title={`${formattedMahalle} Çilingir Servisi - 7/24 Acil`}
         subtitle={`Güzelbahçe ${formattedMahalle} mahallesinde kapıda mı kaldınız? 15 dakikada yanınızdayız. Hızlı, güvenilir ve hasarsız çilingir hizmeti.`}

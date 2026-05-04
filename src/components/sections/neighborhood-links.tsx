@@ -16,7 +16,7 @@ export default function NeighborhoodLinks() {
           {neighborhoods.map((n) => (
             <Button asChild variant="outline" key={n} className="bg-background transition-all hover:bg-primary hover:text-primary-foreground">
               <Link href={`/cilingir/${n}`}>
-                {n.charAt(0).toUpperCase() + n.slice(1)}
+                {n.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}
               </Link>
             </Button>
           ))}

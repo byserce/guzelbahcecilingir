@@ -12,10 +12,10 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'sw
 
 export const metadata: Metadata = {
   title: {
-    default: `📞 Güzelbahçe Çilingir - 7/24 Acil | ${CILINGIR_PHONE_NUMBER}`,
-    template: `%s | ${CILINGIR_BUSINESS_NAME}`,
+    default: `📞 Güzelbahçe Çilingir | 0551 890 19 79 | 7/24 Acil Anahtarcı`,
+    template: `%s | ${CILINGIR_BUSINESS_NAME} - 0551 890 19 79`,
   },
-  description: `Güzelbahçe'de acil çilingir ve anahtarcı. 7/24 nöbetçi servisimizle 15 dakikada kapınızdayız. Oto, kasa, kapı açma, kilit değiştirme. Arayın: ${CILINGIR_PHONE_NUMBER}`,
+  description: `Güzelbahçe'de acil çilingir ve nöbetçi anahtarcı. 7/24 kesintisiz servisimizle 15 dakikada yanınızdayız. Oto çilingir, kasa açma, kilit ve göbek değişimi. Hemen arayın: ${CILINGIR_PHONE_NUMBER}`,
   keywords: [
     'Güzelbahçe çilingir', 
     'Güzelbahçe anahtarcı', 
@@ -39,10 +39,10 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: {
-        default: `📞 Güzelbahçe Çilingir - 7/24 Acil | ${CILINGIR_PHONE_NUMBER}`,
+        default: `📞 Güzelbahçe Çilingir | 0551 890 19 79 | 7/24 Acil Anahtarcı`,
         template: `%s | ${CILINGIR_BUSINESS_NAME}`,
     },
-    description: 'Güzelbahçe\'de 7/24 acil çilingir ve anahtarcı servisi. 15 dakikada yanınızdayız.',
+    description: 'Güzelbahçe\'de 7/24 acil çilingir ve anahtarcı servisi. 15 dakikada yanınızdayız. Hemen arayın: 0551 890 19 79',
     url: `https://${CILINGIR_DOMAIN}`,
     siteName: CILINGIR_BUSINESS_NAME,
     images: [
@@ -58,16 +58,16 @@ export const metadata: Metadata = {
    twitter: {
     card: 'summary_large_image',
     title: {
-      default: `📞 Güzelbahçe Çilingir - 7/24 Acil | ${CILINGIR_PHONE_NUMBER}`,
+      default: `📞 Güzelbahçe Çilingir | 0551 890 19 79 | 7/24 Acil Anahtarcı`,
       template: `%s | ${CILINGIR_BUSINESS_NAME}`,
     },
     description: 'Güzelbahçe\'de 7/24 acil çilingir ve anahtarcı servisi. 15 dakikada yanınızdayız.',
     images: [`https://${CILINGIR_DOMAIN}/og-image.png`],
   },
   icons: {
-    icon: '/logo.png',
-    shortcut: '/logo.png',
-    apple: '/apple-touch-icon.png',
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/favicon.ico',
   },
 };
 
@@ -112,19 +112,22 @@ export default function RootLayout({
       opens: '00:00',
       closes: '23:59',
     },
-    areaServed: {
-      '@type': 'GeoCircle',
-      geoMidpoint: {
-        '@type': 'GeoCoordinates',
-        latitude: '38.3783',
-        longitude: '26.8844'
-      },
-      geoRadius: '10000' // 10km radius
-    },
+    areaServed: [
+        {
+          "@type": "City",
+          "name": "Güzelbahçe",
+          "@id": "https://www.wikidata.org/wiki/Q1018944"
+        },
+        ...neighborhoods.map(n => ({
+            "@type": "AdministrativeArea",
+            "name": `${n.charAt(0).toUpperCase() + n.slice(1)} Mahallesi`
+        }))
+    ],
     contactPoint : {
       '@type' : 'ContactPoint',
       telephone : CILINGIR_PHONE_LINK.replace('tel:', ''),
-      contactType : 'customer service'
+      contactType : 'customer service',
+      availableLanguage: ['Turkish']
     },
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
@@ -134,7 +137,8 @@ export default function RootLayout({
         { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Oto Çilingir Hizmeti' }},
         { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Kasa Çilingir Hizmeti' }},
         { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Kilit ve Göbek Değişimi' }},
-        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Akıllı Kilit Montajı' }}
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Akıllı Kilit Montajı' }},
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Kale Kilit Yetkili Servis' }}
       ]
     }
   };
